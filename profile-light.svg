@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="t d">
 <title id="t">Mark Vincent Plaza</title>
-<desc id="d">Mark Vincent Plaza, IT student at PUP Sto. Tomas building mobile apps, websites and on-device machine learning. 64 contributions in the last year across 11 public repositories.</desc>
+<desc id="d">Mark Vincent Plaza, IT student at PUP Sto. Tomas building mobile apps, websites and on-device machine learning. 65 contributions in the last year across 11 public repositories.</desc>
 <style>
 .m{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace} .s{font-family:'Segoe UI', -apple-system, Helvetica, Arial, sans-serif}
 .hud{font-size:11px;fill:#5d6358;letter-spacing:.12em}
@@ -81,7 +81,7 @@
 <g class="in" style="animation-delay:1.49s"><path d="M440 281H960" stroke="#dcddd3"/><text x="440" y="298" class="m k">STACK</text><text x="544" y="298" class="s v">Flutter · Dart · TensorFlow Lite · Java · Python · JS</text></g>
 <g class="in" style="animation-delay:1.61s"><path d="M440 311H960" stroke="#dcddd3"/><text x="440" y="328" class="m k">BASED</text><text x="544" y="328" class="s v">Philippines</text></g>
 <path class="in" style="animation-delay:1.73s" d="M440 341H960" stroke="#dcddd3"/>
-<g class="in" style="animation-delay:1.85s"><text x="440.0" y="386" class="s num">64<tspan dx="2"></tspan></text><text x="440.0" y="406" class="m k">CONTRIBUTIONS · 12 MO</text></g>
+<g class="in" style="animation-delay:1.85s"><text x="440.0" y="386" class="s num">65<tspan dx="2"></tspan></text><text x="440.0" y="406" class="m k">CONTRIBUTIONS · 12 MO</text></g>
 <g class="in" style="animation-delay:1.95s"><text x="613.3333333333334" y="386" class="s num">11<tspan dx="2"></tspan></text><text x="613.3333333333334" y="406" class="m k">PUBLIC REPOS</text></g>
 <g class="in" style="animation-delay:2.05s"><text x="786.6666666666667" y="386" class="s num">3<tspan dx="2">d</tspan></text><text x="786.6666666666667" y="406" class="m k">BEST STREAK</text></g>
 <g class="in" style="animation-delay:2.2s"><text x="440" y="440" class="m k">TOP LANGUAGES</text><text x="948" y="440" class="m k" text-anchor="end" fill="#456400">open to opportunities</text><rect class="cur" x="954" y="430" width="7" height="12" fill="#456400"/><rect x="440" y="452" width="520" height="10" rx="5" fill="#dcddd3"/></g>
