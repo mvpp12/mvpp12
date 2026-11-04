@@ -11,15 +11,12 @@
 @keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes blink{50%{opacity:0}}
-.prompt{font-size:13px;fill:#5d6358} .prompt tspan{fill:#456400}
-.ok{font-size:13px;fill:#456400}
 .name{font-size:34px;font-weight:700;fill:#12150f;letter-spacing:-.02em}
 .tag{font-size:15px;fill:#3c4238}
 .v{font-size:14px;fill:#12150f}
 .num{font-size:30px;font-weight:700;fill:#12150f;letter-spacing:-.02em}
 .num tspan{font-size:16px;fill:#5d6358;font-weight:600}
 .leg{font-size:12px;fill:#3c4238}
-.lbl{font-size:11px;font-weight:600;fill:#12150f}
 .bar{transform-box:fill-box;transform-origin:left;animation:grow .9s cubic-bezier(.22,1,.36,1) both}
 .dots{animation:dots 2.2s ease both}
 .photo{animation:fade 1s ease 1.1s both}
@@ -62,37 +59,29 @@
 <g class="box" style="transform-origin:216.0px 250.0px">
 <path d="M102 116V100H118M314 100H330V116M330 384V400H314M118 400H102V384" fill="none" stroke="#f4f4ee" stroke-width="5" stroke-linecap="round" opacity=".6"/>
 <path d="M102 116V100H118M314 100H330V116M330 384V400H314M118 400H102V384" fill="none" stroke="#c6f24e" stroke-width="2" stroke-linecap="round"/>
-<rect x="101" y="406" width="120" height="20" rx="5" fill="#c6f24e"/>
-<text x="109" y="420" class="m lbl">class: developer</text>
-</g>
-<g class="m">
-<text x="52" y="474" class="hud">FRAME 001</text>
-<text x="372" y="474" class="hud" text-anchor="end">f/1.8 · 1/120</text>
 </g>
 
 <!-- Readout -->
-<text x="440" y="92" class="m prompt in" style="animation-delay:.2s"><tspan>$</tspan> scan --subject mvpp12</text>
-<text x="440" y="116" class="m ok in" style="animation-delay:.6s">✓ subject detected · profile loaded</text>
-<text x="438" y="166" class="s name in" style="animation-delay:.9s">Mark Vincent Plaza</text>
-<text x="440" y="194" class="s tag in" style="animation-delay:1.05s">IT student building mobile apps, websites &amp; on-device ML.</text>
+<text x="438" y="138" class="s name in" style="animation-delay:.9s">Mark Vincent Plaza</text>
+<text x="440" y="166" class="s tag in" style="animation-delay:1.05s">IT student building mobile apps, websites &amp; on-device ML.</text>
 
-<g class="in" style="animation-delay:1.25s"><path d="M440 221H960" stroke="#dcddd3"/><text x="440" y="238" class="m k">STUDYING</text><text x="544" y="238" class="s v">BS Information Technology · PUP Sto. Tomas</text></g>
-<g class="in" style="animation-delay:1.37s"><path d="M440 251H960" stroke="#dcddd3"/><text x="440" y="268" class="m k">AWARD</text><text x="544" y="268" class="s v">3rd Runner Up · PUP Hackathon 2026</text></g>
-<g class="in" style="animation-delay:1.49s"><path d="M440 281H960" stroke="#dcddd3"/><text x="440" y="298" class="m k">STACK</text><text x="544" y="298" class="s v">Flutter · Dart · TensorFlow Lite · Java · Python · JS</text></g>
-<g class="in" style="animation-delay:1.61s"><path d="M440 311H960" stroke="#dcddd3"/><text x="440" y="328" class="m k">BASED</text><text x="544" y="328" class="s v">Philippines</text></g>
-<path class="in" style="animation-delay:1.73s" d="M440 341H960" stroke="#dcddd3"/>
-<g class="in" style="animation-delay:1.85s"><text x="440.0" y="386" class="s num">65<tspan dx="2"></tspan></text><text x="440.0" y="406" class="m k">CONTRIBUTIONS · 12 MO</text></g>
-<g class="in" style="animation-delay:1.95s"><text x="613.3333333333334" y="386" class="s num">11<tspan dx="2"></tspan></text><text x="613.3333333333334" y="406" class="m k">PUBLIC REPOS</text></g>
-<g class="in" style="animation-delay:2.05s"><text x="786.6666666666667" y="386" class="s num">3<tspan dx="2">d</tspan></text><text x="786.6666666666667" y="406" class="m k">BEST STREAK</text></g>
-<g class="in" style="animation-delay:2.2s"><text x="440" y="440" class="m k">TOP LANGUAGES</text><text x="948" y="440" class="m k" text-anchor="end" fill="#456400">open to opportunities</text><rect class="cur" x="954" y="430" width="7" height="12" fill="#456400"/><rect x="440" y="452" width="520" height="10" rx="5" fill="#dcddd3"/></g>
-<clipPath id="lb"><rect x="440" y="452" width="520" height="10" rx="5"/></clipPath><g clip-path="url(#lb)">
-<rect class="bar" style="animation-delay:2.30s" x="440.0" y="452" width="305.4" height="10" fill="#c6f24e"/>
-<rect class="bar" style="animation-delay:2.42s" x="745.4" y="452" width="147.7" height="10" fill="#8db32a"/>
-<rect class="bar" style="animation-delay:2.54s" x="893.0" y="452" width="41.0" height="10" fill="#5c7d10"/>
-<rect class="bar" style="animation-delay:2.66s" x="934.1" y="452" width="25.9" height="10" fill="#3c4238"/>
+<g class="in" style="animation-delay:1.25s"><path d="M440 193H960" stroke="#dcddd3"/><text x="440" y="210" class="m k">STUDYING</text><text x="544" y="210" class="s v">BS Information Technology · PUP Sto. Tomas</text></g>
+<g class="in" style="animation-delay:1.37s"><path d="M440 223H960" stroke="#dcddd3"/><text x="440" y="240" class="m k">AWARD</text><text x="544" y="240" class="s v">3rd Runner Up · PUP Hackathon 2026</text></g>
+<g class="in" style="animation-delay:1.49s"><path d="M440 253H960" stroke="#dcddd3"/><text x="440" y="270" class="m k">STACK</text><text x="544" y="270" class="s v">Flutter · Dart · TensorFlow Lite · Java · Python · JS</text></g>
+<g class="in" style="animation-delay:1.61s"><path d="M440 283H960" stroke="#dcddd3"/><text x="440" y="300" class="m k">BASED</text><text x="544" y="300" class="s v">Philippines</text></g>
+<path class="in" style="animation-delay:1.73s" d="M440 313H960" stroke="#dcddd3"/>
+<g class="in" style="animation-delay:1.85s"><text x="440.0" y="358" class="s num">65<tspan dx="2"></tspan></text><text x="440.0" y="378" class="m k">CONTRIBUTIONS · 12 MO</text></g>
+<g class="in" style="animation-delay:1.95s"><text x="613.3333333333334" y="358" class="s num">11<tspan dx="2"></tspan></text><text x="613.3333333333334" y="378" class="m k">PUBLIC REPOS</text></g>
+<g class="in" style="animation-delay:2.05s"><text x="786.6666666666667" y="358" class="s num">3<tspan dx="2">d</tspan></text><text x="786.6666666666667" y="378" class="m k">BEST STREAK</text></g>
+<g class="in" style="animation-delay:2.2s"><text x="440" y="412" class="m k">TOP LANGUAGES</text><text x="948" y="412" class="m k" text-anchor="end" fill="#456400">open to opportunities</text><rect class="cur" x="954" y="402" width="7" height="12" fill="#456400"/><rect x="440" y="424" width="520" height="10" rx="5" fill="#dcddd3"/></g>
+<clipPath id="lb"><rect x="440" y="424" width="520" height="10" rx="5"/></clipPath><g clip-path="url(#lb)">
+<rect class="bar" style="animation-delay:2.30s" x="440.0" y="424" width="305.4" height="10" fill="#c6f24e"/>
+<rect class="bar" style="animation-delay:2.42s" x="745.4" y="424" width="147.7" height="10" fill="#8db32a"/>
+<rect class="bar" style="animation-delay:2.54s" x="893.0" y="424" width="41.0" height="10" fill="#5c7d10"/>
+<rect class="bar" style="animation-delay:2.66s" x="934.1" y="424" width="25.9" height="10" fill="#3c4238"/>
 </g>
-<g class="in" style="animation-delay:2.40s"><circle cx="445" cy="483" r="4.5" fill="#c6f24e"/><text x="455" y="487" class="m leg">Dart 57%</text></g>
-<g class="in" style="animation-delay:2.50s"><circle cx="538.2" cy="483" r="4.5" fill="#8db32a"/><text x="548.2" y="487" class="m leg">HTML 28%</text></g>
-<g class="in" style="animation-delay:2.60s"><circle cx="631.4000000000001" cy="483" r="4.5" fill="#5c7d10"/><text x="641.4000000000001" y="487" class="m leg">CSS 8%</text></g>
-<g class="in" style="animation-delay:2.70s"><circle cx="709.8000000000001" cy="483" r="4.5" fill="#3c4238"/><text x="719.8000000000001" y="487" class="m leg">JavaScript 5%</text></g>
+<g class="in" style="animation-delay:2.40s"><circle cx="445" cy="455" r="4.5" fill="#c6f24e"/><text x="455" y="459" class="m leg">Dart 57%</text></g>
+<g class="in" style="animation-delay:2.50s"><circle cx="538.2" cy="455" r="4.5" fill="#8db32a"/><text x="548.2" y="459" class="m leg">HTML 28%</text></g>
+<g class="in" style="animation-delay:2.60s"><circle cx="631.4000000000001" cy="455" r="4.5" fill="#5c7d10"/><text x="641.4000000000001" y="459" class="m leg">CSS 8%</text></g>
+<g class="in" style="animation-delay:2.70s"><circle cx="709.8000000000001" cy="455" r="4.5" fill="#3c4238"/><text x="719.8000000000001" y="459" class="m leg">JavaScript 5%</text></g>
 </svg>

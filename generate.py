@@ -145,6 +145,7 @@ def profile_card(t, data, dots):
         return f'<path d="M{x} {y + dy * br}V{y}H{x + dx * br}"/>'
 
     rx = 440  # right column x
+    dy = -28  # readout offset, keeps it centred beside the photo
     vx = rx + 104
     right = W - 40
 
@@ -152,15 +153,12 @@ def profile_card(t, data, dots):
 <title id="t">Mark Vincent Plaza</title>
 <desc id="d">Mark Vincent Plaza, IT student at PUP Sto. Tomas building mobile apps, websites and on-device machine learning. {data['contributions_year']} contributions in the last year across {data['public_repos']} public repositories.</desc>
 <style>{base_style(t)}
-.prompt{{font-size:13px;fill:{t['muted']}}} .prompt tspan{{fill:{t['accent_text']}}}
-.ok{{font-size:13px;fill:{t['accent_text']}}}
 .name{{font-size:34px;font-weight:700;fill:{t['text']};letter-spacing:-.02em}}
 .tag{{font-size:15px;fill:{t['text_2']}}}
 .v{{font-size:14px;fill:{t['text']}}}
 .num{{font-size:30px;font-weight:700;fill:{t['text']};letter-spacing:-.02em}}
 .num tspan{{font-size:16px;fill:{t['muted']};font-weight:600}}
 .leg{{font-size:12px;fill:{t['text_2']}}}
-.lbl{{font-size:11px;font-weight:600;fill:{t['ink']}}}
 .bar{{transform-box:fill-box;transform-origin:left;animation:grow .9s cubic-bezier(.22,1,.36,1) both}}
 .dots{{animation:dots 2.2s ease both}}
 .photo{{animation:fade 1s ease 1.1s both}}
@@ -194,22 +192,14 @@ def profile_card(t, data, dots):
 <g class="box" style="transform-origin:{fx + fw / 2}px {fy + fh / 2}px">
 <path d="{face_marks(fx, fy, fw, fh)}" fill="none" stroke="{t['bg']}" stroke-width="5" stroke-linecap="round" opacity=".6"/>
 <path d="{face_marks(fx, fy, fw, fh)}" fill="none" stroke="{t['accent']}" stroke-width="2" stroke-linecap="round"/>
-<rect x="{fx - 1}" y="{fy + fh + 6}" width="120" height="20" rx="5" fill="{t['accent']}"/>
-<text x="{fx + 7}" y="{fy + fh + 20}" class="m lbl">class: developer</text>
-</g>
-<g class="m">
-{text(VX + 20, VY + VH - 22, "FRAME 001", "hud")}
-{text(VX + VW - 20, VY + VH - 22, "f/1.8 · 1/120", "hud", ' text-anchor="end"')}
 </g>
 
 <!-- Readout -->
-<text x="{rx}" y="92" class="m prompt in" style="animation-delay:.2s"><tspan>$</tspan> scan --subject mvpp12</text>
-<text x="{rx}" y="116" class="m ok in" style="animation-delay:.6s">✓ subject detected · profile loaded</text>
-<text x="{rx - 2}" y="166" class="s name in" style="animation-delay:.9s">Mark Vincent Plaza</text>
-<text x="{rx}" y="194" class="s tag in" style="animation-delay:1.05s">IT student building mobile apps, websites &amp; on-device ML.</text>
+<text x="{rx - 2}" y="{166 + dy}" class="s name in" style="animation-delay:.9s">Mark Vincent Plaza</text>
+<text x="{rx}" y="{194 + dy}" class="s tag in" style="animation-delay:1.05s">IT student building mobile apps, websites &amp; on-device ML.</text>
 """]
 
-    y = 238
+    y = 238 + dy
     for i, (k, v) in enumerate(FIELDS):
         parts.append(
             f'<g class="in" style="animation-delay:{1.25 + i * 0.12:.2f}s">'
@@ -230,30 +220,30 @@ def profile_card(t, data, dots):
         x = rx + i * col
         parts.append(
             f'<g class="in" style="animation-delay:{1.85 + i * 0.1:.2f}s">'
-            f'<text x="{x}" y="386" class="s num">{n}<tspan dx="2">{unit}</tspan></text>'
-            f'{text(x, 406, label, "m k")}</g>'
+            f'<text x="{x}" y="{386 + dy}" class="s num">{n}<tspan dx="2">{unit}</tspan></text>'
+            f'{text(x, 406 + dy, label, "m k")}</g>'
         )
 
     # Languages as one stacked bar, measured from repo code
     langs = data["languages"]
     total = sum(l["share"] for l in langs) or 1
-    parts.append(f'<g class="in" style="animation-delay:2.2s">{text(rx, 440, "TOP LANGUAGES", "m k")}'
-                 f'{text(right - 12, 440, "open to opportunities", "m k", f" text-anchor=\"end\" fill=\"{t["accent_text"]}\"")}'
-                 f'<rect class="cur" x="{right - 6}" y="430" width="7" height="12" fill="{t["accent_text"]}"/>'
-                 f'<rect x="{rx}" y="452" width="{right - rx}" height="10" rx="5" fill="{t["line"]}"/></g>')
+    parts.append(f'<g class="in" style="animation-delay:2.2s">{text(rx, 440 + dy, "TOP LANGUAGES", "m k")}'
+                 f'{text(right - 12, 440 + dy, "open to opportunities", "m k", f" text-anchor=\"end\" fill=\"{t["accent_text"]}\"")}'
+                 f'<rect class="cur" x="{right - 6}" y="{430 + dy}" width="7" height="12" fill="{t["accent_text"]}"/>'
+                 f'<rect x="{rx}" y="{452 + dy}" width="{right - rx}" height="10" rx="5" fill="{t["line"]}"/></g>')
     bw = right - rx
-    parts.append(f'<clipPath id="lb"><rect x="{rx}" y="452" width="{bw}" height="10" rx="5"/></clipPath><g clip-path="url(#lb)">')
+    parts.append(f'<clipPath id="lb"><rect x="{rx}" y="{452 + dy}" width="{bw}" height="10" rx="5"/></clipPath><g clip-path="url(#lb)">')
     x = rx
     for i, l in enumerate(langs):
         w = bw * l["share"] / total
-        parts.append(f'<rect class="bar" style="animation-delay:{2.3 + i * 0.12:.2f}s" x="{x:.1f}" y="452" width="{w:.1f}" height="10" fill="{t["langs"][i]}"/>')
+        parts.append(f'<rect class="bar" style="animation-delay:{2.3 + i * 0.12:.2f}s" x="{x:.1f}" y="{452 + dy}" width="{w:.1f}" height="10" fill="{t["langs"][i]}"/>')
         x += w
     parts.append("</g>")
     x = rx
     for i, l in enumerate(langs):
         label = f"{l['name']} {l['share'] * 100:.0f}%"
-        parts.append(f'<g class="in" style="animation-delay:{2.4 + i * 0.1:.2f}s"><circle cx="{x + 5}" cy="483" r="4.5" fill="{t["langs"][i]}"/>'
-                     f'{text(x + 15, 487, label, "m leg")}</g>')
+        parts.append(f'<g class="in" style="animation-delay:{2.4 + i * 0.1:.2f}s"><circle cx="{x + 5}" cy="{483 + dy}" r="4.5" fill="{t["langs"][i]}"/>'
+                     f'{text(x + 15, 487 + dy, label, "m leg")}</g>')
         x += len(label) * 7.4 + 34
 
     parts.append("</svg>\n")
