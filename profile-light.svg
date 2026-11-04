@@ -86,13 +86,13 @@
 <g class="in" style="animation-delay:2.05s"><text x="786.6666666666667" y="386" class="s num">3<tspan dx="2">d</tspan></text><text x="786.6666666666667" y="406" class="m k">BEST STREAK</text></g>
 <g class="in" style="animation-delay:2.2s"><text x="440" y="440" class="m k">TOP LANGUAGES</text><text x="948" y="440" class="m k" text-anchor="end" fill="#456400">open to opportunities</text><rect class="cur" x="954" y="430" width="7" height="12" fill="#456400"/><rect x="440" y="452" width="520" height="10" rx="5" fill="#dcddd3"/></g>
 <clipPath id="lb"><rect x="440" y="452" width="520" height="10" rx="5"/></clipPath><g clip-path="url(#lb)">
-<rect class="bar" style="animation-delay:2.30s" x="440.0" y="452" width="303.3" height="10" fill="#c6f24e"/>
-<rect class="bar" style="animation-delay:2.42s" x="743.3" y="452" width="146.7" height="10" fill="#8db32a"/>
-<rect class="bar" style="animation-delay:2.54s" x="890.0" y="452" width="40.8" height="10" fill="#5c7d10"/>
-<rect class="bar" style="animation-delay:2.66s" x="930.7" y="452" width="29.3" height="10" fill="#3c4238"/>
+<rect class="bar" style="animation-delay:2.30s" x="440.0" y="452" width="305.4" height="10" fill="#c6f24e"/>
+<rect class="bar" style="animation-delay:2.42s" x="745.4" y="452" width="147.7" height="10" fill="#8db32a"/>
+<rect class="bar" style="animation-delay:2.54s" x="893.0" y="452" width="41.0" height="10" fill="#5c7d10"/>
+<rect class="bar" style="animation-delay:2.66s" x="934.1" y="452" width="25.9" height="10" fill="#3c4238"/>
 </g>
-<g class="in" style="animation-delay:2.40s"><circle cx="445" cy="483" r="4.5" fill="#c6f24e"/><text x="455" y="487" class="m leg">Dart 56%</text></g>
-<g class="in" style="animation-delay:2.50s"><circle cx="538.2" cy="483" r="4.5" fill="#8db32a"/><text x="548.2" y="487" class="m leg">HTML 27%</text></g>
-<g class="in" style="animation-delay:2.60s"><circle cx="631.4000000000001" cy="483" r="4.5" fill="#5c7d10"/><text x="641.4000000000001" y="487" class="m leg">CSS 7%</text></g>
-<g class="in" style="animation-delay:2.70s"><circle cx="709.8000000000001" cy="483" r="4.5" fill="#3c4238"/><text x="719.8000000000001" y="487" class="m leg">Python 5%</text></g>
+<g class="in" style="animation-delay:2.40s"><circle cx="445" cy="483" r="4.5" fill="#c6f24e"/><text x="455" y="487" class="m leg">Dart 57%</text></g>
+<g class="in" style="animation-delay:2.50s"><circle cx="538.2" cy="483" r="4.5" fill="#8db32a"/><text x="548.2" y="487" class="m leg">HTML 28%</text></g>
+<g class="in" style="animation-delay:2.60s"><circle cx="631.4000000000001" cy="483" r="4.5" fill="#5c7d10"/><text x="641.4000000000001" y="487" class="m leg">CSS 8%</text></g>
+<g class="in" style="animation-delay:2.70s"><circle cx="709.8000000000001" cy="483" r="4.5" fill="#3c4238"/><text x="719.8000000000001" y="487" class="m leg">JavaScript 5%</text></g>
 </svg>

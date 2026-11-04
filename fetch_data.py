@@ -66,6 +66,8 @@ def main():
 
     langs = {}
     for r in own:
+        if r["name"].lower() == USER.lower():
+            continue  # this profile repo's own scripts aren't project code
         for lang, n in json.loads(get(r["languages_url"])).items():
             if lang not in IGNORE_LANGS:
                 langs[lang] = langs.get(lang, 0) + n
