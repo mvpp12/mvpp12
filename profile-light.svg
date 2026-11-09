@@ -35,7 +35,7 @@
 <circle class="live" cx="40" cy="31" r="4.5" fill="#456400"/>
 <text x="54" y="35" class="hud">SCANNING</text>
 <text x="139.2" y="35" class="hud" fill="#3c4238">mvpp12 / profile</text>
-<text x="968" y="35" class="hud" text-anchor="end">SYNCED NOV 8, 2026</text>
+<text x="968" y="35" class="hud" text-anchor="end">SYNCED NOV 9, 2026</text>
 </g>
 <path d="M24 50H976" stroke="#dcddd3"/>
 <defs>
