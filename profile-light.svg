@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="t d">
 <title id="t">Mark Vincent Plaza</title>
-<desc id="d">Mark Vincent Plaza, aspiring AI engineer and IT student at PUP Sto. Tomas, training on-device machine-learning models and building the apps around them. 67 contributions in the last year across 11 public repositories.</desc>
+<desc id="d">Mark Vincent Plaza, aspiring AI engineer and IT student at PUP Sto. Tomas, training on-device machine-learning models and building the apps around them. 71 contributions in the last year across 11 public repositories.</desc>
 <style>
 .m{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace} .s{font-family:'Segoe UI', -apple-system, Helvetica, Arial, sans-serif}
 .hud{font-size:11px;fill:#5d6358;letter-spacing:.12em}
@@ -36,7 +36,7 @@
 <circle class="live" cx="40" cy="31" r="4.5" fill="#456400"/>
 <text x="54" y="35" class="hud">SCANNING</text>
 <text x="139.2" y="35" class="hud" fill="#3c4238">mvpp12 / profile</text>
-<text x="968" y="35" class="hud" text-anchor="end">SYNCED NOV 11, 2026</text>
+<text x="968" y="35" class="hud" text-anchor="end">SYNCED NOV 12, 2026</text>
 </g>
 <path d="M24 50H976" stroke="#dcddd3"/>
 <defs>
@@ -76,7 +76,7 @@
 <g class="in" style="animation-delay:1.49s"><path d="M440 253H960" stroke="#dcddd3"/><text x="440" y="270" class="m k">AWARD</text><text x="544" y="270" class="s v">3rd Runner Up · PUP Hackathon 2026</text></g>
 <g class="in" style="animation-delay:1.61s"><path d="M440 283H960" stroke="#dcddd3"/><text x="440" y="300" class="m k">STACK</text><text x="544" y="300" class="s v">TensorFlow · Keras · TFLite · Python · Flutter</text></g>
 <path class="in" style="animation-delay:1.73s" d="M440 313H960" stroke="#dcddd3"/>
-<g class="in" style="animation-delay:1.85s"><text x="440.0" y="358" class="s num">67<tspan dx="2"></tspan></text><text x="440.0" y="378" class="m k">CONTRIBUTIONS · 12 MO</text></g>
+<g class="in" style="animation-delay:1.85s"><text x="440.0" y="358" class="s num">71<tspan dx="2"></tspan></text><text x="440.0" y="378" class="m k">CONTRIBUTIONS · 12 MO</text></g>
 <g class="in" style="animation-delay:1.95s"><text x="613.3333333333334" y="358" class="s num">11<tspan dx="2"></tspan></text><text x="613.3333333333334" y="378" class="m k">PUBLIC REPOS</text></g>
 <g class="in" style="animation-delay:2.05s"><text x="786.6666666666667" y="358" class="s num">3<tspan dx="2">d</tspan></text><text x="786.6666666666667" y="378" class="m k">BEST STREAK</text></g>
 <g class="in" style="animation-delay:2.2s"><text x="440" y="412" class="m k">TOP LANGUAGES</text><text x="948" y="412" class="m k" text-anchor="end" fill="#456400">open to AI/ML internships</text><rect class="cur" x="954" y="402" width="7" height="12" fill="#456400"/><rect x="440" y="424" width="520" height="10" rx="5" fill="#dcddd3"/></g>
