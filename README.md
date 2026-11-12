@@ -3,7 +3,7 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./profile-dark.svg">
       <source media="(prefers-color-scheme: light)" srcset="./profile-light.svg">
-      <img src="./profile-dark.svg" width="100%" alt="Mark Vincent Plaza: IT student at PUP Sto. Tomas building mobile apps, websites and on-device machine learning.">
+      <img src="./profile-dark.svg" width="100%" alt="Mark Vincent Plaza: aspiring AI engineer and IT student at PUP Sto. Tomas, training on-device machine-learning models and building the apps around them.">
     </picture>
   </a>
 </p>

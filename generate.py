@@ -50,9 +50,9 @@ FACE = (70, 36, 228, 300)
 
 FIELDS = [
     ("studying", "BS Information Technology · PUP Sto. Tomas"),
+    ("focus", "Applied AI · on-device machine learning"),
     ("award", "3rd Runner Up · PUP Hackathon 2026"),
-    ("stack", "Flutter · Dart · TensorFlow Lite · Java · Python · JS"),
-    ("based", "Philippines"),
+    ("stack", "TensorFlow · Keras · TFLite · Python · Flutter"),
 ]
 
 
@@ -151,10 +151,11 @@ def profile_card(t, data, dots):
 
     parts = [f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="t d">
 <title id="t">Mark Vincent Plaza</title>
-<desc id="d">Mark Vincent Plaza, IT student at PUP Sto. Tomas building mobile apps, websites and on-device machine learning. {data['contributions_year']} contributions in the last year across {data['public_repos']} public repositories.</desc>
+<desc id="d">Mark Vincent Plaza, aspiring AI engineer and IT student at PUP Sto. Tomas, training on-device machine-learning models and building the apps around them. {data['contributions_year']} contributions in the last year across {data['public_repos']} public repositories.</desc>
 <style>{base_style(t)}
 .name{{font-size:34px;font-weight:700;fill:{t['text']};letter-spacing:-.02em}}
 .tag{{font-size:15px;fill:{t['text_2']}}}
+.role{{font-size:11px;font-weight:600;fill:{t['accent_text']};letter-spacing:.12em}}
 .v{{font-size:14px;fill:{t['text']}}}
 .num{{font-size:30px;font-weight:700;fill:{t['text']};letter-spacing:-.02em}}
 .num tspan{{font-size:16px;fill:{t['muted']};font-weight:600}}
@@ -195,8 +196,13 @@ def profile_card(t, data, dots):
 </g>
 
 <!-- Readout -->
+<g class="in" style="animation-delay:.6s">
+<rect x="{rx}" y="{84 + dy}" width="196" height="24" rx="12" fill="{t['accent']}" fill-opacity="{'.14' if t is THEMES['dark'] else '.35'}" stroke="{t['accent_text']}" stroke-opacity=".45"/>
+<circle cx="{rx + 14}" cy="{96 + dy}" r="3.5" fill="{t['accent_text']}"/>
+<text x="{rx + 25}" y="{100 + dy}" class="m role">ASPIRING AI ENGINEER</text>
+</g>
 <text x="{rx - 2}" y="{166 + dy}" class="s name in" style="animation-delay:.9s">Mark Vincent Plaza</text>
-<text x="{rx}" y="{194 + dy}" class="s tag in" style="animation-delay:1.05s">IT student building mobile apps, websites &amp; on-device ML.</text>
+<text x="{rx}" y="{194 + dy}" class="s tag in" style="animation-delay:1.05s">Training on-device ML models and building the apps around them.</text>
 """]
 
     y = 238 + dy
@@ -228,7 +234,7 @@ def profile_card(t, data, dots):
     langs = data["languages"]
     total = sum(l["share"] for l in langs) or 1
     parts.append(f'<g class="in" style="animation-delay:2.2s">{text(rx, 440 + dy, "TOP LANGUAGES", "m k")}'
-                 f'{text(right - 12, 440 + dy, "open to opportunities", "m k", f" text-anchor=\"end\" fill=\"{t["accent_text"]}\"")}'
+                 f'{text(right - 12, 440 + dy, "open to AI/ML internships", "m k", f" text-anchor=\"end\" fill=\"{t["accent_text"]}\"")}'
                  f'<rect class="cur" x="{right - 6}" y="{430 + dy}" width="7" height="12" fill="{t["accent_text"]}"/>'
                  f'<rect x="{rx}" y="{452 + dy}" width="{right - rx}" height="10" rx="5" fill="{t["line"]}"/></g>')
     bw = right - rx
